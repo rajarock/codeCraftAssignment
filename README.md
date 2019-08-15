@@ -12,3 +12,17 @@ Folder structure
     package.json    - It contains package info along with running script and dependency details
     postcss.config  -  It contains config for postCss
     yarn.lock       - this is locks file and it contains details for installed npm packages 
+
+
+Developmet build setup
+-----------------------
+nodejs version >=10.16.0
+yarn version >= 1.16
+react version >= 16.8.6
+
+
+Run comment :
+-------------
+1. yarn install 
+2. yarn dev 
+
