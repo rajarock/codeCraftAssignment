@@ -1,0 +1,294 @@
+@mixin labels () {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    color: #AC6CFF;
+    letter-spacing: 1.5px;
+    margin-right: 14px;
+    width: 74px;
+    height: 19px;
+}
+
+@mixin alignContent() {
+    display: flex;
+    padding-top: 74px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cc-right-container {
+    padding-left: 56px;
+    padding-right: 120px;
+    width: calc(100% - 430px);
+    height: 768px;
+    overflow-y: scroll;
+}
+.cc-sidebar-back {
+    width: 30;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 33px;
+}
+.cc-device-title-container {
+    @include alignContent();
+}
+
+.cc-device-name-container {
+    @include alignContent();
+}
+.cc-session-container {
+    @include alignContent();
+}
+.cc-shades-label-container
+{
+    @include alignContent();
+    justify-content: left;
+    padding-top:  66px;
+    .cc-shades-label {
+        @include labels();
+        width: 74px;
+    }
+    .cc-dotted-line {
+        width: calc(100% - 74px);
+    }
+}
+.cc-mode-label-container {
+    @include alignContent();
+    justify-content: left;
+    padding-top: 70px;
+    .cc-mode-label {
+        @include labels();
+        width: 56px;
+    }
+    .cc-dotted-line {
+        width: calc(100% - 56px);
+    }
+}
+.cc-intensity-label-container {
+    @include alignContent();
+    justify-content: left;
+    padding-top: 70px;
+    .cc-intensity-label {
+        @include labels();
+        width: 94px;
+    }
+    .cc-dotted-line {
+        width: calc(100% - 94px);
+    }
+}
+
+
+.cc-shades-box-container
+{
+    @include alignContent();
+    padding-top: 41px;
+    flex-wrap: wrap;
+}
+
+.cc-device-name {
+    font-family: Montserrat-Bold;
+    font-size: 32px;
+    color: #000000;
+    letter-spacing: 5.12px;
+    text-shadow: 0 20px 25px rgba(0,0,0,0.15);
+    text-transform: uppercase;
+}
+.cc-device-selector {
+    width: 42px;
+    height: 24px;
+    background: #000000;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.15);
+    border-radius: 60px;
+    .toggled {
+        margin: 5px 23px;
+    }
+}
+
+.cc-device-selector-icon {
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    box-shadow: 0 12px 18px 0 rgba(0,0,0,0.10);
+    border-radius: 60px;
+    margin: 5px 23px 5px 5px;
+}
+.cc-device-title {
+    width: 276px;
+    height: 58px;
+    line-height: 58px;
+    font-family: Montserrat-Bold;
+    font-size: 48px;
+    letter-spacing: 8.4px;
+    text-transform: uppercase;
+    /** style guide inputs are mismatch with designs */
+    color: #986363;
+    color: black;
+    /** to be removed duplicate based on clarifications */
+}
+.cc-device-plus {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    background-image: linear-gradient(-135deg, #DEFFC9 0%, #A3F8FF 100%);
+    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.15);
+    transition: all 2.0s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.cc-dotted-line
+{
+    border-top: 1px dotted #AC6CFF;
+}
+
+.cc-shades-value
+{
+    width: 32px;
+    height: 32px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+    transition: all 0.15s ease-in-out;
+    &.selected , &:hover {
+        width: 48px;
+        height: 48px;
+        box-shadow: 0 27px 27px 0 rgba(0,0,0,0.15);
+    }
+}
+.selected img {
+    padding : 12px;
+}
+.cc-session-container {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.cc-session-mode {
+    display: flex;
+    height: 56px;
+    line-height: 56px;
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0.56px;
+
+    &.active {
+        color: #FFFFFF;
+        background-image: linear-gradient(135deg, #AD6BFF 0%, #74BCF7 100%);
+        box-shadow: 0 20px 20px 0 rgba(0,0,0,0.15);
+        div {
+            opacity: 1;
+        }
+    }
+    div {
+        width: 282px;
+        opacity: 0.6;
+    }
+    span {
+        width: 478px;
+    }
+    img {
+        width : 24px;
+        height: 24px;
+        margin-left: 22px;
+        margin-top : 17px;
+        margin-bottom : 15px;
+        margin-right: 23px;
+    }
+}
+.cc-roundy-container {
+    @include alignContent();
+    display: block;
+    position: relative;
+    padding-top: 51px;
+    overflow: hidden;
+    height: 222px;
+}
+.sliderHandle:after {
+    color: #FFFFFF;
+    background: linear-gradient(-50deg, #AD6BFF 0%, #74BCF7 100%) !important;
+}
+.cc-roundy-value {
+    position: absolute;
+    top: 132px;
+    left: 80px;
+    width: 80px;
+    height: 49px;
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 6.4px;
+    text-shadow: 0 20px 25px rgba(0,0,0,0.15);
+}
+
+
+/**** Mobile Design **/
+@media  screen and (min-width : 320px) and (max-width : 767px) {
+    .cc-right-container {
+        padding-left: 6px;
+        padding-right: 20px;
+        width: calc(100% - 186px);
+    }
+    .cc-device-title {
+        font-size: 20px;
+        letter-spacing: 7px;
+        z-index: 1;
+    }
+    .cc-device-plus {
+        background-image: none;
+        box-shadow:none;
+    }
+    .cc-device-name {
+        width: 50%;
+        font-size: 25px;
+        letter-spacing: 4px;
+    }
+    .cc-session-mode {
+        font-size : 14px;
+        div {
+            display: none;
+        }
+        img {
+            margin: 12px;
+        }
+    }
+    .cc-shades-box-container {
+        justify-content: flex-start;
+        padding-top: 31px;
+        .cc-shades-value {
+            width: 24px;
+            height: 24px;
+            margin: 20px;
+                &.selected , &:hover {
+                    width: 42px;
+                    height: 42px;
+                    margin: 11px;
+                    box-shadow: 0 18px 18px 0 rgba(0,0,0,0.15);
+                }
+        }
+        .selected img {
+            padding : 9px;
+        }
+
+    }
+    .cc-roundy-container { 
+        padding-top: 34px;
+        height: 130px;
+    }
+    .cc-roundy-value {
+        font-size: 36px;
+        letter-spacing: 5.76px;
+        top: 74px;
+        left: 42px;
+    }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .cc-right-container {
+        padding-left: 36px;
+        padding-right: 50px;
+        width: calc( 100% - 250px);
+    }
+  }
