@@ -67,10 +67,10 @@ module.exports = {
         main: './src/App/App.js',
     },
     output: {
-        filename : 'bundle.js',
-        // filename: '[name]-bundle.[hash].js',
-        // chunkFilename: '[name].[hash].js',
-        path : path.resolve(__dirname,'dist')
+        // filename : 'bundle.js',
+        filename: '[name]-bundle.[hash].js',
+        chunkFilename: '[name].[hash].js',
+        path : path.resolve(__dirname,'../build')
     },
     optimization: {
       },
