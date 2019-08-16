@@ -13,14 +13,20 @@ function getWindowDimensions() {
   };
 }
 
-function handleResize() {
-  state.dimensions = getWindowDimensions();
-}
-
-window.addEventListener('resize', handleResize);
-
 @observer
  class Home extends React.Component {
+   constructor(props){
+     super(props)
+   }
+   componentWillUnmount(){
+    window.removeEventListener('resize');
+   }
+   componentDidMount() {
+     state.dimensions = getWindowDimensions()
+     window.addEventListener('resize',() => {  
+        state.dimensions = getWindowDimensions()
+    });
+   }
     render(){
         return (
             <div className="cc-main-container">
