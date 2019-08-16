@@ -60,14 +60,23 @@ const cssLoader = {
 const fontLoader =  { test: /\.(woff|woff2|eot|ttf)$/, loader: 'url-loader?limit=100000' }
 
 module.exports = {
+    name: 'web',
+    target: 'web',
     mode: 'production',
     entry : {
         main: './src/App/App.js',
     },
     output: {
-        filename : 'bundle.js',
+        // filename : 'bundle.js',
+        filename: '[name]-bundle.[hash].js',
+        chunkFilename: '[name].[hash].js',
         path : path.resolve(__dirname,'dist')
     },
+    optimization: {
+        splitChunks: {
+          chunks: 'all',
+        },
+      },
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
