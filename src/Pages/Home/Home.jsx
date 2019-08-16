@@ -19,13 +19,17 @@ function getWindowDimensions() {
      super(props)
    }
    componentWillUnmount(){
-    window.removeEventListener('resize');
+     if(typeof window !== "undefined") {
+       window.removeEventListener('resize');
+     }
    }
    componentDidMount() {
-     state.dimensions = getWindowDimensions()
-     window.addEventListener('resize',() => {  
+      if(typeof window !== "undefined") {
         state.dimensions = getWindowDimensions()
-    });
+        window.addEventListener('resize',() => {  
+            state.dimensions = getWindowDimensions()
+        })
+      }
    }
     render(){
         return (
