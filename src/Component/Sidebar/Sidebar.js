@@ -4,7 +4,7 @@ import { state } from '../Store'
 import deviceData from './fixture'
 import SidebarItems from './SidebarItems'
 import './styles.scss'
-import { backWhiteTick } from '../../images';
+import { backWhiteTick } from '../../Assets/images';
 
 @observer
 class Sidebar extends React.Component {

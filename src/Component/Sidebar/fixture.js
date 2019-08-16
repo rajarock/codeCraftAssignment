@@ -4,7 +4,7 @@ import {
     lockDevice,
     thermostat,
     television
-} from '../../images'
+} from '../../Assets/images'
 
 const deviceData = [
     {

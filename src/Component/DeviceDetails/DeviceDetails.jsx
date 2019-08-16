@@ -13,7 +13,7 @@ import {
     nightDark, 
     plusDark, 
     backWhiteTick 
-} from '../../images'
+} from '../../Assets/images'
 import './styles.scss'
 
 

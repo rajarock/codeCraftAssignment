@@ -5,7 +5,7 @@ import {
     lockDevice,
     thermostat,
     television
-} from '../../images'
+} from '../../Assets/images'
 import './styles.scss'
 
 class SidebarItems extends React.Component {

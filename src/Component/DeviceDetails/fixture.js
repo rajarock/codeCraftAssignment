@@ -1,4 +1,4 @@
-import { tickWhite, morningWhite, dayDark, nightDark } from '../../images'
+import { tickWhite, morningWhite, dayDark, nightDark } from '../../Assets/images'
 
  const ShadesData  = [
     {
