@@ -4,7 +4,7 @@
     "description": "created for code craft assignment",
     "private": true,
     "scripts": {
-        "start": "NODE_ENV=development PORT=8080 node config/main.js",
+        "start": "NODE_ENV=development PORT=3500 node config/main.js",
         "build": "NODE_ENV=production node config/main.js",
         "dev": "node config/main.js",
         "compile": "node config/main.js"
