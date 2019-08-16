@@ -4,7 +4,7 @@
     "description": "created for code craft assignment",
     "private": true,
     "scripts": {
-        "start": "NODE_ENV=development node config/main.js",
+        "start": "webpack-dev-server --port $PORT --host 0.0.0.0  NODE_ENV=development node config/main.js",
         "build": "NODE_ENV=production node config/main.js",
         "dev": "node config/main.js",
         "compile": "node config/main.js"
