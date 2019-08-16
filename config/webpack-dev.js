@@ -60,7 +60,7 @@ const cssLoader = {
 const fontLoader =  { test: /\.(woff|woff2|eot|ttf)$/, loader: 'url-loader?limit=100000' }
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry : {
         main: './src/App/App.js',
     },
