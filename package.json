@@ -1,7 +1,7 @@
 {
-    "name": "react-mine",
+    "name": "code-craft-1.0.0",
     "version": "1.0.0",
-    "description": "created for self explore",
+    "description": "created for code craft assignment",
     "private": true,
     "scripts": {
         "build": "webpack --config config/main.js",
