@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({template: './src/App/index.html'})
-const miniCssExtractPlugin = new MiniCssExtractPlugin({filename: "[name].css"})
+const miniCssExtractPlugin = new MiniCssExtractPlugin({filename: "[name].[hash].css"})
 const progressBarPlugin = new ProgressBarPlugin()
 
 const babelLoader = {
