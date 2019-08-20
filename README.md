@@ -32,5 +32,18 @@ Run comment :
 TODO:
 ------
 1. Code optimization and performance [in-progress]
-2. Production ready code [done]
-3. deployment using docker [in-progress]
+2. Production ready code [Done]
+3. deployment using docker [Done]
+4. deploy in s3 / heroku / amplify --> using this docker push as contianer we can achieve [todo]
+
+Docker deployment notes
+-----------------------
+
+1. Install docker and related setup in local / server machine 
+2. create an account in dockerhub 
+3. copy Dockerfile along with build.sh and run.sh and paste it to where we need to deploy ( we can do via cmd cli comments )
+4. execute build.sh and then run.sh with desired port details 
+5. build will be available in mentioned port 
+
+
+
