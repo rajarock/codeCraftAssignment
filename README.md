@@ -46,4 +46,14 @@ Docker deployment notes
 5. build will be available in mentioned port 
 
 
+Efforts for this task:
+----------------------
+1. React setup along with webpack - 12hrs (2SP) 
+2. Router , Code splitting - 3hrs ( .5 SP)
+3. UI with functionality (responsive ) - 12hrs (2SP)
+4. Docker setup and deployment process - 18hrs ( 3SP)
+
+Total 45 hrs (7.5 StoryPoints per developer) 
+
+
 
