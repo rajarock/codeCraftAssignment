@@ -27,3 +27,10 @@ Run comment :
 1. yarn install 
 2. yarn dev 
 
+
+
+TODO:
+------
+1. Code optimization and performance [in-progress]
+2. Production ready code [done]
+3. deployment using docker [in-progress]
